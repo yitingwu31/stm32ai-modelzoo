@@ -1,0 +1,15 @@
+dataset:
+  format: pascal_voc_format
+  class_names:
+  - trafficlight
+  - stop
+  - speedlimit
+  - crosswalk
+coco_format:
+  images_path: ../chess_coco/train
+  json_annotations_file_path: ../chess_coco/train/_annotations.coco.json
+  export_dir: subset_chess/train
+pascal_voc_format:
+  images_path: ../road-sign-xml/images
+  xml_files_path: ../road-sign-xml/annotations/
+  export_dir: road-sign-darknet/

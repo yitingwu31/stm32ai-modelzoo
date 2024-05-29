@@ -88,7 +88,7 @@ def convert_voc_to_yolo(xml_folder, images_folder, classes, export_folder):
                     label_file.close()
 
         if copy_image:
-            image_file = os.path.splitext(filename)[0] + '.jpg'
+            image_file = os.path.splitext(filename)[0] + '.png'
             image_path = os.path.join(images_folder, image_file)
             shutil.copy(image_path, export_folder)
 

@@ -174,7 +174,7 @@ def load_data(annotations: list) -> tuple:
     image_labels = []
 
     for annotation in tqdm.tqdm(annotations):
-        images_path = os.path.splitext(annotation)[0] + '.jpg'
+        images_path = os.path.splitext(annotation)[0] + '.png'
         image = tf.io.read_file(images_path)
         image = tf.io.decode_image(image, channels=3, expand_animations=False)
         img = image.numpy()
